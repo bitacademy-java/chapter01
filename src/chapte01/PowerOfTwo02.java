@@ -2,7 +2,7 @@ package chapte01;
 
 import java.util.Scanner;
 
-public class PowerOfTwo01 {
+public class PowerOfTwo02 {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -12,15 +12,12 @@ public class PowerOfTwo01 {
 		
 		int result = 1;
 		
-		int i = 0;
-		while(i < power) {
+		for(int i = 0; i < power; i++) {
 			result *= 2;
-			i++;
 		}
 		
 		System.out.println("2의 " + power + "승은 " + result + "입니다.");
 		s.close();
-
 	}
 
 }
